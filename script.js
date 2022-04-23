@@ -12,14 +12,14 @@ if (url.searchParams.get('by') != null) {
 
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo ira sayang", "Aku ada pertanyaan nih buat ira", "question").then(function () {
-    Swal.fire("Jawab yang jujur ya iraa!").then(function () {
-      Swal.fire("Awas aja kalau ira bohong", "", "error").then(function () {
+  Swal.fire("Hallo balqis sayang", "Aku ada pertanyaan nih buat balqis", "question").then(function () {
+    Swal.fire("Jawab yang jujur ya sayang!").then(function () {
+      Swal.fire("Awas aja kalo balqis bohong", "", "error").then(function () {
 
         const {
           value: name
         } = Swal.fire({
-          title: 'Masukin nama lengkap ira dulu dong',
+          title: 'Masukin nama ade dulu dong',
           input: 'text',
           inputLabel: '',
           showCancelButton: true,
@@ -32,7 +32,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           }
         }).then(function () {
           const pertanyaan = Swal.fire({
-            title: `${nama} ira sayang ${sender} gak?`,
+            title: `${nama} sayang ${sender} gak?`,
             showDenyButton: true,
             showCancelButton: false,
             confirmButtonText: `Sayang`,
@@ -70,7 +70,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                           })
                         })
                       } else if (result.isDenied) {
-                        Swal.fire('yahhh , emang ga kangen sama calon suami sendiri', '', 'error').then(function () {
+                        Swal.fire('yahhh , emang ga kangen sama calon suami sendiri?', '', 'error').then(function () {
                           Swal.fire('Yaudah deh okee sayangg huhu:((')
                         })
                       }
